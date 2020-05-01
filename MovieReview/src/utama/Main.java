@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projectpbo;
-
+package utama;
+import loginNya.MVCLogin;
 /**
  *
- * @author Orenji
+ * @author Satya
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Henlo Satya");
+        System.out.println("Holaaa");
+        MVCLogin penerapan = new MVCLogin();
     }
 }
