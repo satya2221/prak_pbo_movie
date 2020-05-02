@@ -54,7 +54,9 @@ public class MainMenuView extends JFrame{
         frame.add(b_lihat_data_semua);
         b_lihat_data_semua.setBounds(135, 380, 180, 60);
     }
-
+//    public static void main(String[] args) {
+//        new MainMenuView("satya");
+//    }
     public String getUsername() {
         return username;
     }

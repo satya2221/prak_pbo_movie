@@ -5,6 +5,7 @@
  */
 package MainMenu;
 
+import filmLengkap.MVCFilmLengkap;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -48,6 +49,7 @@ public class MainMenuController {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 // pindah ke data review semua user
+                MVCFilmLengkap film = new MVCFilmLengkap();
             }
         });
         
