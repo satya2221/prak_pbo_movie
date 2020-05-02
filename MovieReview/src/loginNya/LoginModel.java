@@ -29,7 +29,7 @@ public class LoginModel {
             System.out.println("Koneksi gagal!");
         }
     }
-    public void cekLogin(String username,String pass){
+    public boolean cekLogin(String username,String pass){
         int cek = 0;
         try {
             statement = (Statement)koneksi.createStatement();
@@ -40,8 +40,8 @@ public class LoginModel {
             }
             if(cek>0){
                 JOptionPane.showMessageDialog(null,"Login Success");
-                //kodingan pindah halaman
-                //eaa belum ada
+                //mengembalikan nilai true biar di cek di controller nantinya
+                return true;
             }
             else{
                 JOptionPane.showMessageDialog(null,"Login Failed");
@@ -50,6 +50,6 @@ public class LoginModel {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage(),"Hasil",JOptionPane.ERROR_MESSAGE);
         }
-        
+        return false;
     }
 }

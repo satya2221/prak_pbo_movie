@@ -7,6 +7,7 @@ package loginNya;
 
 import java.awt.*;
 import javax.swing.*;
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 /**
  *
@@ -16,7 +17,7 @@ public class LoginView {
     Font fontt = new Font("SanSerif", Font.PLAIN, 20);
     Font font_isi = new Font("SanSerif", Font.PLAIN, 14);
 //    LoginModel model = new LoginModel();
-    JFrame frame = new JFrame("Judul");
+    JFrame frame = new JFrame("Login Menu");
     JLabel llogin = new JLabel("Login");
     JLabel lusername = new JLabel("Username");
     JTextField fusername = new JTextField();
@@ -33,7 +34,7 @@ public class LoginView {
         frame.setSize(450,525);
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation (3);
+        frame.setDefaultCloseOperation (EXIT_ON_CLOSE);
         
         frame.add(llogin);
         llogin.setFont(fontt);

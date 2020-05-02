@@ -5,6 +5,7 @@
  */
 package loginNya;
 
+import MainMenu.MVCMainMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -31,7 +32,10 @@ public class LoginController {
                 } else {
                     String nama = viewnya.getFusername();
                     String pass = viewnya.getFpassword();
-                    modelnya.cekLogin(nama, pass);
+                    if (modelnya.cekLogin(nama, pass)) { // kalo nilai true, nanti pindah halaman
+                        System.out.println("Pindah ke Main Menu");
+                        MVCMainMenu mainMenu = new MVCMainMenu();
+                   }
                     viewnya.fusername.setText("");
                     viewnya.fpassword.setText("");          
                 }
