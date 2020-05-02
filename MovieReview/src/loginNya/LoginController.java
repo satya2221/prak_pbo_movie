@@ -6,6 +6,7 @@
 package loginNya;
 
 import MainMenu.MVCMainMenu;
+import Register.MVCRegister;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -34,7 +35,7 @@ public class LoginController {
                     String pass = viewnya.getFpassword();
                     if (modelnya.cekLogin(nama, pass)) { // kalo nilai true, nanti pindah halaman
                         System.out.println("Pindah ke Main Menu");
-                        MVCMainMenu mainMenu = new MVCMainMenu();
+                        MVCMainMenu mainMenu = new MVCMainMenu(nama);
                    }
                     viewnya.fusername.setText("");
                     viewnya.fpassword.setText("");          
@@ -50,10 +51,11 @@ public class LoginController {
             }
         });
         
-        viewnya.b_login.addActionListener(new ActionListener() {
+        viewnya.b_register.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 //pindah ke halaman register
+                MVCRegister mVCRegister = new MVCRegister();
             }
         });
     }

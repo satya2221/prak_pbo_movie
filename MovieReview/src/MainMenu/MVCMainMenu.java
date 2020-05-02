@@ -10,5 +10,16 @@ package MainMenu;
  * @author Orenji
  */
 public class MVCMainMenu {
-    MainMenuView mainMenuView = new MainMenuView();
+    private String username;
+    
+
+    public MVCMainMenu(String username) {
+        this.username = username;
+        MainMenuView mainMenuView = new MainMenuView(username);
+        MainMenuController mainMenuController = new MainMenuController(mainMenuView);
+    }
+
+    public String getUsername() {
+        return username;
+    }
 }
