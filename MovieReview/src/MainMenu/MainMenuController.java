@@ -5,6 +5,7 @@
  */
 package MainMenu;
 
+import InputFilm.MVCInputFilm;
 import filmLengkap.MVCFilmLengkap;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -25,6 +26,7 @@ public class MainMenuController {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 // pindah ke bagian input
+                MVCInputFilm mVCInputFilm = new MVCInputFilm(mainMenuView.getUsername());
             }
         });
         

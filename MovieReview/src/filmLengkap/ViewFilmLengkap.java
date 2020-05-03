@@ -8,6 +8,7 @@ package filmLengkap;
 import java.awt.*;
 import javax.swing.*;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
+import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -49,7 +50,7 @@ public class ViewFilmLengkap {
         frame.setSize(900,400);
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation (EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation (DISPOSE_ON_CLOSE);
         pane.setBounds(0, 0, 880, 320);
 //      pane.setBackground(Color.PINK);
         frame.add(pane);
