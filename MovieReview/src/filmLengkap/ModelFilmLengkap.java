@@ -50,13 +50,14 @@ public class ModelFilmLengkap {
     public String[][] tampilkanData(){
         try {
             int jmlData=0;
-            String data[][] = new String[banyaknyaData()][3];
+            String data[][] = new String[banyaknyaData()][4];
             String query = "Select * from `movie`";
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){
-                data[jmlData][0] = resultSet.getString("judul");
-                data[jmlData][1] = resultSet.getString("sutradara");
-                data[jmlData][2] = resultSet.getString("nilai");
+                data[jmlData][0] = resultSet.getString("id_movie");
+                data[jmlData][1] = resultSet.getString("judul");
+                data[jmlData][2] = resultSet.getString("sutradara");
+                data[jmlData][3] = resultSet.getString("nilai");
                 jmlData++;
             }
             return data;

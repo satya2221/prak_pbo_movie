@@ -23,9 +23,9 @@ public class MainMenuView extends JFrame{
     JFrame frame = new JFrame("Main Menu");
     JLabel ljudul;
     JButton b_input = new JButton("Input");
-    JButton b_update = new JButton("Update");
-    JButton b_lihat_data_user = new JButton("Lihat Data User");
-    JButton b_lihat_data_semua = new JButton("Lihat Semua Data");
+    JButton b_update = new JButton("Review Anda");
+    JButton b_lihat_data_user = new JButton("Profile");
+    JButton b_lihat_data_semua = new JButton("Daftar Film");
 
     public MainMenuView(String username){
         this.username = username;

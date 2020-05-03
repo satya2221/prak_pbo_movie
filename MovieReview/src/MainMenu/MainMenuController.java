@@ -9,6 +9,7 @@ import InputFilm.MVCInputFilm;
 import filmLengkap.MVCFilmLengkap;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import profileUser.MVCProfile;
 
 /**
  *
@@ -43,6 +44,7 @@ public class MainMenuController {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 // pindah ke data review user
+                MVCProfile profile = new MVCProfile(mainMenuView.getUsername());
             }
         });
         

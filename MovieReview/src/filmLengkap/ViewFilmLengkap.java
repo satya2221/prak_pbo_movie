@@ -16,13 +16,12 @@ import javax.swing.table.DefaultTableModel;
  * @author Satya
  */
 public class ViewFilmLengkap {
-    private String username;
     Font fontt = new Font("SanSerif", Font.PLAIN, 20);
     Font font_isi = new Font("SanSerif", Font.PLAIN, 14);
     
     JTable tabel;
     Container c;
-    Object[] kolom = {"Film","Sutradara","Nilai"};
+    Object[] kolom = {"ID","Film","Sutradara","Nilai"};
     DefaultTableModel model;
     JScrollPane pane;
     
