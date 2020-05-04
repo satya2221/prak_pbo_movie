@@ -5,6 +5,7 @@
  */
 package filmLengkap;
 
+import filmDetail.MVCFilmDetail;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.*;
@@ -33,9 +34,10 @@ public class ControllerFilmLengkap {
             @Override
             public void mouseClicked(MouseEvent me) {
                 super.mouseClicked(me);
-                    me.consume();
-                    //Pindah halaman detail film
-                    JOptionPane.showMessageDialog(null, "Data Tidak eaaa");
+                baris = viewnya.tabel.getSelectedRow();
+                dataterpilih = viewnya.tabel.getValueAt(baris, 0).toString();
+                JOptionPane.showMessageDialog(null, "cek Film");
+                MVCFilmDetail detail = new MVCFilmDetail(dataterpilih);
                 //To change body of generated methods, choose Tools | Templates.
             }
         });
