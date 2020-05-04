@@ -55,13 +55,21 @@ public class ProfileModel {
                 while (hasilnya.next()){
                     jmlData++;
                 }
+                System.out.println(jmlData);
+            statement = (Statement)koneksi.createStatement();
             if (jmlData<3){
+                query = "UPDATE `user` SET  id_ranks = '001' WHERE `username`= '"+username+"'";
+                statement.executeUpdate(query);
                 return "baby";
             }
-                else if(jmlData>3 && jmlData<5){
+                else if(jmlData>=3 && jmlData<=5){
+                    query = "UPDATE `user` SET  id_ranks = '005' WHERE `username`= '"+username+"'";
+                    statement.executeUpdate(query);
                     return "grown up";
                 }
                     else{
+                    query = "UPDATE `user` SET  id_ranks = '010' WHERE `username`= '"+username+"'";
+                    statement.executeUpdate(query);
                         return "warrior";
                     }
         } catch (Exception e) {

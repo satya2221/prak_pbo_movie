@@ -19,13 +19,14 @@ public class FilmDetailController {
     public FilmDetailController(FilmDetailModel modelnya, FilmDetailView viewnya) {
         this.modelnya = modelnya;
         this.viewnya = viewnya;
+        System.out.println(viewnya.getId_movie());
         
-        String filmnya [] = modelnya.tampilkanData(viewnya.getId_movie());
-        viewnya.ljudul.setText(filmnya[1]);
-        viewnya.lgenre.setText(filmnya[2]);
-        viewnya.Ldurasi.setText(filmnya[0]);
-        viewnya.lnilai.setText(filmnya[4]);
-        viewnya.lsutradara.setText(filmnya[3]);
+        String[] filmnya = modelnya.tampilkanData(viewnya.getId_movie());
+        viewnya.ljudul.setText(filmnya[2]);
+        viewnya.lgenre.setText(filmnya[3]);
+        viewnya.Ldurasi.setText(filmnya[1]);
+        viewnya.lnilai.setText(filmnya[5]);
+        viewnya.lsutradara.setText(filmnya[4]);
         
         if (modelnya.banyaknyaReview(viewnya.getId_movie()) != 0) {
             String reviewnya[][] = modelnya.tampilkanReview(viewnya.getId_movie());

@@ -34,15 +34,19 @@ public class FilmDetailModel {
      public String[] tampilkanData(String id_movie){
         try {
             int jmlData=0;
-            String data[] = new String[5];
-            String query = "Select * from `movie` WHERE `id_movie`= '"+id_movie+"'";
+            String data[] = new String[6];
+            String query = "SELECT * FROM `movie` WHERE `id_movie`= '"+id_movie+"'";
+            statement = (Statement)koneksi.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
-                data[0] = resultSet.getString("durasi");
-                data[1] = resultSet.getString("judul");
-                data[2] = resultSet.getString("genre");
-                data[3] = resultSet.getString("sutradara");
-                data[4] = resultSet.getString("nilai");
             
+            while (resultSet.next()){
+                data[0] = resultSet.getString("id_movie");    
+                data[1] = resultSet.getString("durasi");
+                data[2] = resultSet.getString("judul");
+                data[3] = resultSet.getString("genre");
+                data[4] = resultSet.getString("sutradara");
+                data[5] = resultSet.getString("nilai");
+            }
             return data;
         } catch (Exception errorTampil) {
             JOptionPane.showMessageDialog(null, errorTampil.getMessage(),"Hasil",JOptionPane.ERROR_MESSAGE);

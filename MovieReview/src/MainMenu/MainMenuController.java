@@ -6,6 +6,7 @@
 package MainMenu;
 
 import InputFilm.MVCInputFilm;
+import ReviewAnda.MVCReviewAnda;
 import filmLengkap.MVCFilmLengkap;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -36,6 +37,7 @@ public class MainMenuController {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 // pindah ke bagian update
+                MVCReviewAnda reviewAnda = new MVCReviewAnda(mainMenuView.getUsername());
             }
         });
         
