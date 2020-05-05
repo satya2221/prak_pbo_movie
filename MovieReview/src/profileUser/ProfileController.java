@@ -5,6 +5,8 @@
  */
 package profileUser;
 
+import GantiPass.MVCGantiPass;
+import ReviewAnda.MVCReviewAnda;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -28,6 +30,7 @@ public class ProfileController {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 //menuju edit data diri
+                MVCGantiPass gantiPass = new  MVCGantiPass(viewnya.getUsername());
             }
         });
         
@@ -35,6 +38,7 @@ public class ProfileController {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 //menuju review anda
+                MVCReviewAnda reviewAnda = new MVCReviewAnda(viewnya.getUsername());
             }
         });
     }

@@ -22,7 +22,7 @@ public class ProfileView {
     JFrame frame = new JFrame("Profile");
     
     JLabel lprofile,lnama,Lranknya,piclabel;
-    JButton b_update = new JButton("Ubah data");
+    JButton b_update = new JButton("Ubah Pass");
     
     JLabel lranking = new JLabel("Rank Anda");
 
@@ -46,25 +46,25 @@ public class ProfileView {
         lprofile.setBounds(165, 25, 125, 25);
         
         frame.add(piclabel);
-        piclabel.setBounds(155,50,50,50);
+        piclabel.setBounds(155,60,50,50);
         
         frame.add(lnama);
         lnama.setFont(font_penting);
-        lnama.setBounds(190, 140, 130, 25);
+        lnama.setBounds(190, 150, 130, 25);
         
         frame.add(b_update);
-        b_update.setBounds(155, 175, 120, 25);
+        b_update.setBounds(155, 185, 120, 25);
         
         frame.add(lranking);
         lranking.setFont(font_judul);
-        lranking.setBounds(165, 210, 125, 25);
+        lranking.setBounds(165, 250, 125, 25);
         
         frame.add(Lranknya);
         Lranknya.setFont(font_penting);
-        Lranknya.setBounds(160, 240, 130, 25);
+        Lranknya.setBounds(160, 280, 130, 25);
         
         frame.add(b_lihat_data_review);
-        b_lihat_data_review.setBounds(155, 275, 115, 60);
+        b_lihat_data_review.setBounds(155, 315, 115, 60);
         
     }
     
