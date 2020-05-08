@@ -7,6 +7,7 @@ package MainMenu;
 
 import java.awt.Font;
 import java.awt.HeadlessException;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -26,6 +27,8 @@ public class MainMenuView extends JFrame{
     JButton b_update = new JButton("Review Anda");
     JButton b_lihat_data_user = new JButton("Profile");
     JButton b_lihat_data_semua = new JButton("Daftar Film");
+    
+    JLabel background = new JLabel();
 
     public MainMenuView(String username){
         this.username = username;
@@ -53,10 +56,15 @@ public class MainMenuView extends JFrame{
         
         frame.add(b_lihat_data_semua);
         b_lihat_data_semua.setBounds(135, 380, 180, 60);
+        
+        frame.add(background);
+        background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\try1.jpg"));
+        background.setBounds(0,0,450,525);
+
     }
-//    public static void main(String[] args) {
-//        new MainMenuView("satya");
-//    }
+    public static void main(String[] args) {
+        new MainMenuView("satya");
+    }
     public String getUsername() {
         return username;
     }

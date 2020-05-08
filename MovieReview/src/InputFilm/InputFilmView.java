@@ -6,6 +6,7 @@
 package InputFilm;
 
 import java.awt.Font;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -105,7 +106,15 @@ public class InputFilmView extends JFrame{
         
         frame.add(b_input);
         b_input.setBounds(245, 585, 100, 20);
+        
+        frame.add(background);
+        background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\450x700.jpg"));
+        background.setBounds(0,0,450,700);
+
     }
+//    public static void main(String[] args) {
+//        new InputFilmView();
+//    }
     
     public String getJudul(){
         return fjudul.getText();

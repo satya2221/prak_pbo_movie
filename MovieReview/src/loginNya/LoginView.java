@@ -63,7 +63,7 @@ public class LoginView {
         b_register.setBounds(170, 307, 90, 20);
         
         frame.add(background);
-        background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\KTPku.jpg"));
+        background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\try1.jpg"));
         background.setBounds(0,0,450,525);
     }
     public static void main(String[] args) {

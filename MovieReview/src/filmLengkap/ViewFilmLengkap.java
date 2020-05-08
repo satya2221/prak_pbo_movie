@@ -26,11 +26,8 @@ public class ViewFilmLengkap {
     JScrollPane pane;
     
     JFrame frame = new JFrame("Film");
-//    JLabel ljudul;
-//    JButton b_input = new JButton("Input");
-//    JButton b_update = new JButton("Update");
-//    JButton b_lihat_data_user = new JButton("Lihat Data User");
-//    JButton b_lihat_data_semua = new JButton("Lihat Semua Data");
+    JLabel background = new JLabel();
+
 
     public ViewFilmLengkap() {
         model = new DefaultTableModel(kolom,0);
@@ -53,9 +50,13 @@ public class ViewFilmLengkap {
         pane.setBounds(0, 0, 880, 320);
 //      pane.setBackground(Color.PINK);
         frame.add(pane);
+        
+        frame.add(background);
+        background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\try.jpg"));
+        background.setBounds(0,0,900,400);
     }
     
-//    public static void main(String[] args) {
-//        new ViewFilmLengkap();
-//    }
+    public static void main(String[] args) {
+        new ViewFilmLengkap();
+    }
 }

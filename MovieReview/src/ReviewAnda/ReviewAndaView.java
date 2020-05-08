@@ -7,6 +7,7 @@ package ReviewAnda;
 
 import java.awt.Container;
 import java.awt.Font;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -35,6 +36,8 @@ public class ReviewAndaView extends JFrame{
     JButton b_cari = new JButton("Cari");
     
     JTextField t_cari = new JTextField();
+    
+    JLabel background = new JLabel();
     
     private String username;
 
@@ -65,8 +68,15 @@ public class ReviewAndaView extends JFrame{
         
         frame.add(b_refresh);
         b_refresh.setBounds(240, 20, 120, 20);
+        
+        frame.add(background);
+        background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\try.jpg"));
+        background.setBounds(0,0,900,400);
 
     }
+//    public static void main(String[] args) {
+//        new ReviewAndaView("satya");
+//    }
 
     public String getUsername() {
         return username;

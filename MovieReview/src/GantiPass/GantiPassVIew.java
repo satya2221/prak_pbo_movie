@@ -75,11 +75,14 @@ public class GantiPassVIew {
         frame.add(b_reset);
         b_reset.setBounds(95, 380, 70, 25);
        
+        frame.add(background);
+        background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\try1.jpg"));
+        background.setBounds(0,0,450,525);
     }
     
-//    public static void main(String[] args) {
-//        new GantiPassVIew("satya");
-//    }
+    public static void main(String[] args) {
+        new GantiPassVIew("satya");
+    }
 
     public String getUsername() {
         return username;

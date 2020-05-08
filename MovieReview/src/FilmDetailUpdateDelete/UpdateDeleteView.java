@@ -7,6 +7,7 @@ package FilmDetailUpdateDelete;
 
 import java.awt.Button;
 import java.awt.Font;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -41,6 +42,7 @@ public class UpdateDeleteView extends JFrame{
             b_delete = new JButton("Delete");
     
     JFrame frame = new JFrame("Update dan Delete movie");
+    JLabel background = new JLabel();
 
     public UpdateDeleteView(String judul, String username) {
         this.judul = judul;
@@ -84,6 +86,10 @@ public class UpdateDeleteView extends JFrame{
         
         frame.add(b_delete);
         b_delete.setBounds(180, 265, 120, 20);
+        
+        frame.add(background);
+        background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\try1.jpg"));
+        background.setBounds(0,0,450,525);
         
     }
     

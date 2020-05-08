@@ -29,6 +29,8 @@ public class FilmDetailView {
     JScrollPane pane;
     
     JFrame frame = new JFrame("Film");
+    
+    JLabel background = new JLabel();
 
     public FilmDetailView(String idMovie/*,String judul, String genre,String durasi, String nilai*/) {
         this.id_movie = idMovie;
@@ -61,43 +63,47 @@ public class FilmDetailView {
         
         frame.add(ljudul);
         ljudul.setFont(font_judul);
-        ljudul.setBounds(400, 20, 125, 25);
+        ljudul.setBounds(400, 20, 145, 25);
         
         frame.add(genrenya);
         genrenya.setFont(font_isi);
         genrenya.setBounds(20, 60, 55, 25);
         frame.add(lgenre);
         lgenre.setFont(font_penting);
-        lgenre.setBounds(100, 60, 50, 25);
+        lgenre.setBounds(100, 60, 100, 25);
         
         frame.add(durasinya);
         durasinya.setFont(font_isi);
         durasinya.setBounds(20, 100, 50, 25);
         frame.add(Ldurasi);
         Ldurasi.setFont(font_penting);
-        Ldurasi.setBounds(100, 100, 50, 25);
+        Ldurasi.setBounds(100, 100, 100, 25);
         
         frame.add(nilainya);
         nilainya.setFont(font_isi);
         nilainya.setBounds(20, 140, 50, 25);
         frame.add(lnilai);
         lnilai.setFont(font_penting);
-        lnilai.setBounds(100, 140, 50, 25);
+        lnilai.setBounds(100, 140, 100, 25);
         
         frame.add(sutradaranya);
         sutradaranya.setFont(font_isi);
         sutradaranya.setBounds(20, 180, 75, 25);
         frame.add(lsutradara);
         lsutradara.setFont(font_penting);
-        lsutradara.setBounds(100, 180, 50, 25);
+        lsutradara.setBounds(100, 180, 150, 25);
         
         pane.setBounds(0, 210, 880, 180);
         frame.add(pane);
+        
+        frame.add(background);
+        background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\try.jpg"));
+        background.setBounds(0,0,900,400);
     }
     
-//    public static void main(String[] args) {
-//        new FilmDetailView("1");
-//    }
+    public static void main(String[] args) {
+        new FilmDetailView("1");
+    }
 
     public String getId_movie() {
         return id_movie;

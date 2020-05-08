@@ -32,7 +32,7 @@ public class FilmDetailController {
             String reviewnya[][] = modelnya.tampilkanReview(viewnya.getId_movie());
             viewnya.tabel.setModel(new JTable(reviewnya, viewnya.kolom).getModel());
         } else {
-            JOptionPane.showMessageDialog(null, "Data Tidak Ada");
+            JOptionPane.showMessageDialog(null, "Review Tidak Ada");
         }
     }
     
