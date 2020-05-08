@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/java/project_praktikum/prak_pbo_movie/MovieReview/src/MainMenu/MainMenuView.java</file>
-            <file>file:/D:/java/project_praktikum/prak_pbo_movie/MovieReview/src/ReviewAnda/ReviewAndaView.java</file>
-            <file>file:/D:/java/project_praktikum/prak_pbo_movie/MovieReview/src/profileUser/ProfileView.java</file>
-            <file>file:/D:/java/project_praktikum/prak_pbo_movie/MovieReview/src/loginNya/LoginView.java</file>
-            <file>file:/D:/java/project_praktikum/prak_pbo_movie/MovieReview/src/InputFilm/InputFilmView.java</file>
+            <file>file:/D:/java/project_praktikum/prak_pbo_movie/MovieReview/src/utama/Main.java</file>
+            <file>file:/D:/java/project_praktikum/prak_pbo_movie/MovieReview/src/filmDetail/FilmDetailModel.java</file>
+            <file>file:/D:/java/project_praktikum/prak_pbo_movie/MovieReview/src/filmLengkap/ControllerFilmLengkap.java</file>
+            <file>file:/D:/java/project_praktikum/prak_pbo_movie/MovieReview/src/filmDetail/FilmDetailController.java</file>
         </group>
     </open-files>
 </project-private>
