@@ -9,7 +9,7 @@ package Hitung;
  *
  * @author Orenji
  */
-public class RataRataUser {
+public class RataRataUser implements Hitung {
     private int nilai1;
     private int nilai2;
     private int nilai3;
