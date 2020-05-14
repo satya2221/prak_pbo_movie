@@ -6,6 +6,7 @@
 package Register;
 
 import java.awt.Font;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
@@ -70,6 +71,9 @@ public class RegisterView extends JFrame{
         frame.add(b_reset);
         b_reset.setBounds(95, 285, 100, 20);
         
+        frame.add(background);
+        background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\try1.jpg"));
+        background.setBounds(0,0,450,525);
         
     }
     

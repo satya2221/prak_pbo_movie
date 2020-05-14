@@ -66,9 +66,9 @@ public class LoginView {
         background.setIcon(new ImageIcon("D:\\onedrive\\Pictures\\try1.jpg"));
         background.setBounds(0,0,450,525);
     }
-    public static void main(String[] args) {
-        new LoginView();
-    }
+//    public static void main(String[] args) {
+//        new LoginView();
+//    }
 
     public String getFusername() {
         return fusername.getText();

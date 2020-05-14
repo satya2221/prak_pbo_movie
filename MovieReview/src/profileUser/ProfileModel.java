@@ -30,21 +30,6 @@ public class ProfileModel {
             System.out.println("Koneksi gagal!");
         }
     }
-//    public int banyaknyaRev(){
-//        int jmlData=0;
-//        try {
-//            statement = (Statement)koneksi.createStatement();
-//            String query = "SELECT * FROM `movie`";
-//            ResultSet hasilnya = statement.executeQuery(query);
-//                while (hasilnya.next()){
-//                    jmlData++;
-//                }
-//            return jmlData;
-//        } catch (Exception countData) {
-//            JOptionPane.showMessageDialog(null, countData.getMessage(),"Hasil",JOptionPane.ERROR_MESSAGE);
-//            return 0;
-//        }
-//    }
     
     public String tampilkanrank(String username){
         int jmlData=0;
